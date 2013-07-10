@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     loadg();
     SetFontSize(16);
 #ifdef EMSCRIPTEN
-    emscripten_set_main_loop(EmscriptenLoop, 60, true);
+    emscripten_set_main_loop(EmscriptenLoop, 40, true);
 #else
     while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0) {
 	UpdateKeys();
