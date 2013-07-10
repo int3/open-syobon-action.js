@@ -1,3 +1,5 @@
 *.o
 *.swp
 *.html
+*.map
+*.data
