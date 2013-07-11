@@ -6122,23 +6122,10 @@ Module['FS_createPath']('/', 'BGM', true, true);
     Module['addRunDependency']('fp res/player.PNG');
     filePreload6.send(null);
     var filePreload7 = new DataRequest();
-    filePreload7.open('GET', 'res/player_old.png', true);
+    filePreload7.open('GET', 'res/sazanami', true);
     filePreload7.responseType = 'arraybuffer';
     filePreload7.onload = function() {
       var arrayBuffer = filePreload7.response;
-      assert(arrayBuffer, 'Loading file res/player_old.png failed.');
-      var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
-      Module['FS_createPreloadedFile']('/res', 'player_old.png', byteArray, true, true, function() {
-        Module['removeRunDependency']('fp res/player_old.png');
-      });
-    };
-    Module['addRunDependency']('fp res/player_old.png');
-    filePreload7.send(null);
-    var filePreload8 = new DataRequest();
-    filePreload8.open('GET', 'res/sazanami', true);
-    filePreload8.responseType = 'arraybuffer';
-    filePreload8.onload = function() {
-      var arrayBuffer = filePreload8.response;
       assert(arrayBuffer, 'Loading file res/sazanami failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/res', 'sazanami', byteArray, true, true, function() {
@@ -6146,25 +6133,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       });
     };
     Module['addRunDependency']('fp res/sazanami');
-    filePreload8.send(null);
-    var filePreload9 = new DataRequest();
-    filePreload9.open('GET', 'res/sazanami-gothic.ttf', true);
-    filePreload9.responseType = 'arraybuffer';
-    filePreload9.onload = function() {
-      var arrayBuffer = filePreload9.response;
-      assert(arrayBuffer, 'Loading file res/sazanami-gothic.ttf failed.');
-      var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
-      Module['FS_createPreloadedFile']('/res', 'sazanami-gothic.ttf', byteArray, true, true, function() {
-        Module['removeRunDependency']('fp res/sazanami-gothic.ttf');
-      });
-    };
-    Module['addRunDependency']('fp res/sazanami-gothic.ttf');
-    filePreload9.send(null);
-    var filePreload10 = new DataRequest();
-    filePreload10.open('GET', 'res/syobon3.PNG', true);
-    filePreload10.responseType = 'arraybuffer';
-    filePreload10.onload = function() {
-      var arrayBuffer = filePreload10.response;
+    filePreload7.send(null);
+    var filePreload8 = new DataRequest();
+    filePreload8.open('GET', 'res/syobon3.PNG', true);
+    filePreload8.responseType = 'arraybuffer';
+    filePreload8.onload = function() {
+      var arrayBuffer = filePreload8.response;
       assert(arrayBuffer, 'Loading file res/syobon3.PNG failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/res', 'syobon3.PNG', byteArray, true, true, function() {
@@ -6172,12 +6146,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       });
     };
     Module['addRunDependency']('fp res/syobon3.PNG');
-    filePreload10.send(null);
-    var filePreload11 = new DataRequest();
-    filePreload11.open('GET', 'res/teki.PNG', true);
-    filePreload11.responseType = 'arraybuffer';
-    filePreload11.onload = function() {
-      var arrayBuffer = filePreload11.response;
+    filePreload8.send(null);
+    var filePreload9 = new DataRequest();
+    filePreload9.open('GET', 'res/teki.PNG', true);
+    filePreload9.responseType = 'arraybuffer';
+    filePreload9.onload = function() {
+      var arrayBuffer = filePreload9.response;
       assert(arrayBuffer, 'Loading file res/teki.PNG failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/res', 'teki.PNG', byteArray, true, true, function() {
@@ -6185,12 +6159,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       });
     };
     Module['addRunDependency']('fp res/teki.PNG');
-    filePreload11.send(null);
-    var filePreload12 = new DataRequest();
-    filePreload12.open('GET', 'SE/4-clear.ogg', true);
-    filePreload12.responseType = 'arraybuffer';
-    filePreload12.onload = function() {
-      var arrayBuffer = filePreload12.response;
+    filePreload9.send(null);
+    var filePreload10 = new DataRequest();
+    filePreload10.open('GET', 'SE/4-clear.ogg', true);
+    filePreload10.responseType = 'arraybuffer';
+    filePreload10.onload = function() {
+      var arrayBuffer = filePreload10.response;
       assert(arrayBuffer, 'Loading file SE/4-clear.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', '4-clear.ogg', byteArray, true, true, function() {
@@ -6198,12 +6172,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/4-clear.ogg') });
     };
     Module['addRunDependency']('fp SE/4-clear.ogg');
-    filePreload12.send(null);
-    var filePreload13 = new DataRequest();
-    filePreload13.open('GET', 'SE/allclear.ogg', true);
-    filePreload13.responseType = 'arraybuffer';
-    filePreload13.onload = function() {
-      var arrayBuffer = filePreload13.response;
+    filePreload10.send(null);
+    var filePreload11 = new DataRequest();
+    filePreload11.open('GET', 'SE/allclear.ogg', true);
+    filePreload11.responseType = 'arraybuffer';
+    filePreload11.onload = function() {
+      var arrayBuffer = filePreload11.response;
       assert(arrayBuffer, 'Loading file SE/allclear.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'allclear.ogg', byteArray, true, true, function() {
@@ -6211,12 +6185,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/allclear.ogg') });
     };
     Module['addRunDependency']('fp SE/allclear.ogg');
-    filePreload13.send(null);
-    var filePreload14 = new DataRequest();
-    filePreload14.open('GET', 'SE/brockbreak.ogg', true);
-    filePreload14.responseType = 'arraybuffer';
-    filePreload14.onload = function() {
-      var arrayBuffer = filePreload14.response;
+    filePreload11.send(null);
+    var filePreload12 = new DataRequest();
+    filePreload12.open('GET', 'SE/brockbreak.ogg', true);
+    filePreload12.responseType = 'arraybuffer';
+    filePreload12.onload = function() {
+      var arrayBuffer = filePreload12.response;
       assert(arrayBuffer, 'Loading file SE/brockbreak.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'brockbreak.ogg', byteArray, true, true, function() {
@@ -6224,12 +6198,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/brockbreak.ogg') });
     };
     Module['addRunDependency']('fp SE/brockbreak.ogg');
-    filePreload14.send(null);
-    var filePreload15 = new DataRequest();
-    filePreload15.open('GET', 'SE/brockcoin.ogg', true);
-    filePreload15.responseType = 'arraybuffer';
-    filePreload15.onload = function() {
-      var arrayBuffer = filePreload15.response;
+    filePreload12.send(null);
+    var filePreload13 = new DataRequest();
+    filePreload13.open('GET', 'SE/brockcoin.ogg', true);
+    filePreload13.responseType = 'arraybuffer';
+    filePreload13.onload = function() {
+      var arrayBuffer = filePreload13.response;
       assert(arrayBuffer, 'Loading file SE/brockcoin.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'brockcoin.ogg', byteArray, true, true, function() {
@@ -6237,12 +6211,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/brockcoin.ogg') });
     };
     Module['addRunDependency']('fp SE/brockcoin.ogg');
-    filePreload15.send(null);
-    var filePreload16 = new DataRequest();
-    filePreload16.open('GET', 'SE/brockkinoko.ogg', true);
-    filePreload16.responseType = 'arraybuffer';
-    filePreload16.onload = function() {
-      var arrayBuffer = filePreload16.response;
+    filePreload13.send(null);
+    var filePreload14 = new DataRequest();
+    filePreload14.open('GET', 'SE/brockkinoko.ogg', true);
+    filePreload14.responseType = 'arraybuffer';
+    filePreload14.onload = function() {
+      var arrayBuffer = filePreload14.response;
       assert(arrayBuffer, 'Loading file SE/brockkinoko.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'brockkinoko.ogg', byteArray, true, true, function() {
@@ -6250,12 +6224,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/brockkinoko.ogg') });
     };
     Module['addRunDependency']('fp SE/brockkinoko.ogg');
-    filePreload16.send(null);
-    var filePreload17 = new DataRequest();
-    filePreload17.open('GET', 'SE/coin.ogg', true);
-    filePreload17.responseType = 'arraybuffer';
-    filePreload17.onload = function() {
-      var arrayBuffer = filePreload17.response;
+    filePreload14.send(null);
+    var filePreload15 = new DataRequest();
+    filePreload15.open('GET', 'SE/coin.ogg', true);
+    filePreload15.responseType = 'arraybuffer';
+    filePreload15.onload = function() {
+      var arrayBuffer = filePreload15.response;
       assert(arrayBuffer, 'Loading file SE/coin.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'coin.ogg', byteArray, true, true, function() {
@@ -6263,12 +6237,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/coin.ogg') });
     };
     Module['addRunDependency']('fp SE/coin.ogg');
-    filePreload17.send(null);
-    var filePreload18 = new DataRequest();
-    filePreload18.open('GET', 'SE/death.ogg', true);
-    filePreload18.responseType = 'arraybuffer';
-    filePreload18.onload = function() {
-      var arrayBuffer = filePreload18.response;
+    filePreload15.send(null);
+    var filePreload16 = new DataRequest();
+    filePreload16.open('GET', 'SE/death.ogg', true);
+    filePreload16.responseType = 'arraybuffer';
+    filePreload16.onload = function() {
+      var arrayBuffer = filePreload16.response;
       assert(arrayBuffer, 'Loading file SE/death.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'death.ogg', byteArray, true, true, function() {
@@ -6276,12 +6250,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/death.ogg') });
     };
     Module['addRunDependency']('fp SE/death.ogg');
-    filePreload18.send(null);
-    var filePreload19 = new DataRequest();
-    filePreload19.open('GET', 'SE/dokan.ogg', true);
-    filePreload19.responseType = 'arraybuffer';
-    filePreload19.onload = function() {
-      var arrayBuffer = filePreload19.response;
+    filePreload16.send(null);
+    var filePreload17 = new DataRequest();
+    filePreload17.open('GET', 'SE/dokan.ogg', true);
+    filePreload17.responseType = 'arraybuffer';
+    filePreload17.onload = function() {
+      var arrayBuffer = filePreload17.response;
       assert(arrayBuffer, 'Loading file SE/dokan.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'dokan.ogg', byteArray, true, true, function() {
@@ -6289,12 +6263,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/dokan.ogg') });
     };
     Module['addRunDependency']('fp SE/dokan.ogg');
-    filePreload19.send(null);
-    var filePreload20 = new DataRequest();
-    filePreload20.open('GET', 'SE/gameover.ogg', true);
-    filePreload20.responseType = 'arraybuffer';
-    filePreload20.onload = function() {
-      var arrayBuffer = filePreload20.response;
+    filePreload17.send(null);
+    var filePreload18 = new DataRequest();
+    filePreload18.open('GET', 'SE/gameover.ogg', true);
+    filePreload18.responseType = 'arraybuffer';
+    filePreload18.onload = function() {
+      var arrayBuffer = filePreload18.response;
       assert(arrayBuffer, 'Loading file SE/gameover.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'gameover.ogg', byteArray, true, true, function() {
@@ -6302,12 +6276,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/gameover.ogg') });
     };
     Module['addRunDependency']('fp SE/gameover.ogg');
-    filePreload20.send(null);
-    var filePreload21 = new DataRequest();
-    filePreload21.open('GET', 'SE/goal.ogg', true);
-    filePreload21.responseType = 'arraybuffer';
-    filePreload21.onload = function() {
-      var arrayBuffer = filePreload21.response;
+    filePreload18.send(null);
+    var filePreload19 = new DataRequest();
+    filePreload19.open('GET', 'SE/goal.ogg', true);
+    filePreload19.responseType = 'arraybuffer';
+    filePreload19.onload = function() {
+      var arrayBuffer = filePreload19.response;
       assert(arrayBuffer, 'Loading file SE/goal.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'goal.ogg', byteArray, true, true, function() {
@@ -6315,12 +6289,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/goal.ogg') });
     };
     Module['addRunDependency']('fp SE/goal.ogg');
-    filePreload21.send(null);
-    var filePreload22 = new DataRequest();
-    filePreload22.open('GET', 'SE/hintBlock.ogg', true);
-    filePreload22.responseType = 'arraybuffer';
-    filePreload22.onload = function() {
-      var arrayBuffer = filePreload22.response;
+    filePreload19.send(null);
+    var filePreload20 = new DataRequest();
+    filePreload20.open('GET', 'SE/hintBlock.ogg', true);
+    filePreload20.responseType = 'arraybuffer';
+    filePreload20.onload = function() {
+      var arrayBuffer = filePreload20.response;
       assert(arrayBuffer, 'Loading file SE/hintBlock.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'hintBlock.ogg', byteArray, true, true, function() {
@@ -6328,12 +6302,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/hintBlock.ogg') });
     };
     Module['addRunDependency']('fp SE/hintBlock.ogg');
-    filePreload22.send(null);
-    var filePreload23 = new DataRequest();
-    filePreload23.open('GET', 'SE/humi.ogg', true);
-    filePreload23.responseType = 'arraybuffer';
-    filePreload23.onload = function() {
-      var arrayBuffer = filePreload23.response;
+    filePreload20.send(null);
+    var filePreload21 = new DataRequest();
+    filePreload21.open('GET', 'SE/humi.ogg', true);
+    filePreload21.responseType = 'arraybuffer';
+    filePreload21.onload = function() {
+      var arrayBuffer = filePreload21.response;
       assert(arrayBuffer, 'Loading file SE/humi.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'humi.ogg', byteArray, true, true, function() {
@@ -6341,12 +6315,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/humi.ogg') });
     };
     Module['addRunDependency']('fp SE/humi.ogg');
-    filePreload23.send(null);
-    var filePreload24 = new DataRequest();
-    filePreload24.open('GET', 'SE/jump.ogg', true);
-    filePreload24.responseType = 'arraybuffer';
-    filePreload24.onload = function() {
-      var arrayBuffer = filePreload24.response;
+    filePreload21.send(null);
+    var filePreload22 = new DataRequest();
+    filePreload22.open('GET', 'SE/jump.ogg', true);
+    filePreload22.responseType = 'arraybuffer';
+    filePreload22.onload = function() {
+      var arrayBuffer = filePreload22.response;
       assert(arrayBuffer, 'Loading file SE/jump.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'jump.ogg', byteArray, true, true, function() {
@@ -6354,12 +6328,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/jump.ogg') });
     };
     Module['addRunDependency']('fp SE/jump.ogg');
-    filePreload24.send(null);
-    var filePreload25 = new DataRequest();
-    filePreload25.open('GET', 'SE/jumpBlock.ogg', true);
-    filePreload25.responseType = 'arraybuffer';
-    filePreload25.onload = function() {
-      var arrayBuffer = filePreload25.response;
+    filePreload22.send(null);
+    var filePreload23 = new DataRequest();
+    filePreload23.open('GET', 'SE/jumpBlock.ogg', true);
+    filePreload23.responseType = 'arraybuffer';
+    filePreload23.onload = function() {
+      var arrayBuffer = filePreload23.response;
       assert(arrayBuffer, 'Loading file SE/jumpBlock.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'jumpBlock.ogg', byteArray, true, true, function() {
@@ -6367,12 +6341,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/jumpBlock.ogg') });
     };
     Module['addRunDependency']('fp SE/jumpBlock.ogg');
-    filePreload25.send(null);
-    var filePreload26 = new DataRequest();
-    filePreload26.open('GET', 'SE/kirra.ogg', true);
-    filePreload26.responseType = 'arraybuffer';
-    filePreload26.onload = function() {
-      var arrayBuffer = filePreload26.response;
+    filePreload23.send(null);
+    var filePreload24 = new DataRequest();
+    filePreload24.open('GET', 'SE/kirra.ogg', true);
+    filePreload24.responseType = 'arraybuffer';
+    filePreload24.onload = function() {
+      var arrayBuffer = filePreload24.response;
       assert(arrayBuffer, 'Loading file SE/kirra.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'kirra.ogg', byteArray, true, true, function() {
@@ -6380,12 +6354,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/kirra.ogg') });
     };
     Module['addRunDependency']('fp SE/kirra.ogg');
-    filePreload26.send(null);
-    var filePreload27 = new DataRequest();
-    filePreload27.open('GET', 'SE/koura.ogg', true);
-    filePreload27.responseType = 'arraybuffer';
-    filePreload27.onload = function() {
-      var arrayBuffer = filePreload27.response;
+    filePreload24.send(null);
+    var filePreload25 = new DataRequest();
+    filePreload25.open('GET', 'SE/koura.ogg', true);
+    filePreload25.responseType = 'arraybuffer';
+    filePreload25.onload = function() {
+      var arrayBuffer = filePreload25.response;
       assert(arrayBuffer, 'Loading file SE/koura.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'koura.ogg', byteArray, true, true, function() {
@@ -6393,12 +6367,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/koura.ogg') });
     };
     Module['addRunDependency']('fp SE/koura.ogg');
-    filePreload27.send(null);
-    var filePreload28 = new DataRequest();
-    filePreload28.open('GET', 'SE/powerup.ogg', true);
-    filePreload28.responseType = 'arraybuffer';
-    filePreload28.onload = function() {
-      var arrayBuffer = filePreload28.response;
+    filePreload25.send(null);
+    var filePreload26 = new DataRequest();
+    filePreload26.open('GET', 'SE/powerup.ogg', true);
+    filePreload26.responseType = 'arraybuffer';
+    filePreload26.onload = function() {
+      var arrayBuffer = filePreload26.response;
       assert(arrayBuffer, 'Loading file SE/powerup.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'powerup.ogg', byteArray, true, true, function() {
@@ -6406,12 +6380,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/powerup.ogg') });
     };
     Module['addRunDependency']('fp SE/powerup.ogg');
-    filePreload28.send(null);
-    var filePreload29 = new DataRequest();
-    filePreload29.open('GET', 'SE/Pswitch.ogg', true);
-    filePreload29.responseType = 'arraybuffer';
-    filePreload29.onload = function() {
-      var arrayBuffer = filePreload29.response;
+    filePreload26.send(null);
+    var filePreload27 = new DataRequest();
+    filePreload27.open('GET', 'SE/Pswitch.ogg', true);
+    filePreload27.responseType = 'arraybuffer';
+    filePreload27.onload = function() {
+      var arrayBuffer = filePreload27.response;
       assert(arrayBuffer, 'Loading file SE/Pswitch.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'Pswitch.ogg', byteArray, true, true, function() {
@@ -6419,12 +6393,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/Pswitch.ogg') });
     };
     Module['addRunDependency']('fp SE/Pswitch.ogg');
-    filePreload29.send(null);
-    var filePreload30 = new DataRequest();
-    filePreload30.open('GET', 'SE/tekifire.ogg', true);
-    filePreload30.responseType = 'arraybuffer';
-    filePreload30.onload = function() {
-      var arrayBuffer = filePreload30.response;
+    filePreload27.send(null);
+    var filePreload28 = new DataRequest();
+    filePreload28.open('GET', 'SE/tekifire.ogg', true);
+    filePreload28.responseType = 'arraybuffer';
+    filePreload28.onload = function() {
+      var arrayBuffer = filePreload28.response;
       assert(arrayBuffer, 'Loading file SE/tekifire.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/SE', 'tekifire.ogg', byteArray, true, true, function() {
@@ -6432,12 +6406,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp SE/tekifire.ogg') });
     };
     Module['addRunDependency']('fp SE/tekifire.ogg');
-    filePreload30.send(null);
-    var filePreload31 = new DataRequest();
-    filePreload31.open('GET', 'BGM/castle.ogg', true);
-    filePreload31.responseType = 'arraybuffer';
-    filePreload31.onload = function() {
-      var arrayBuffer = filePreload31.response;
+    filePreload28.send(null);
+    var filePreload29 = new DataRequest();
+    filePreload29.open('GET', 'BGM/castle.ogg', true);
+    filePreload29.responseType = 'arraybuffer';
+    filePreload29.onload = function() {
+      var arrayBuffer = filePreload29.response;
       assert(arrayBuffer, 'Loading file BGM/castle.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/BGM', 'castle.ogg', byteArray, true, true, function() {
@@ -6445,12 +6419,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp BGM/castle.ogg') });
     };
     Module['addRunDependency']('fp BGM/castle.ogg');
-    filePreload31.send(null);
-    var filePreload32 = new DataRequest();
-    filePreload32.open('GET', 'BGM/dungeon.ogg', true);
-    filePreload32.responseType = 'arraybuffer';
-    filePreload32.onload = function() {
-      var arrayBuffer = filePreload32.response;
+    filePreload29.send(null);
+    var filePreload30 = new DataRequest();
+    filePreload30.open('GET', 'BGM/dungeon.ogg', true);
+    filePreload30.responseType = 'arraybuffer';
+    filePreload30.onload = function() {
+      var arrayBuffer = filePreload30.response;
       assert(arrayBuffer, 'Loading file BGM/dungeon.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/BGM', 'dungeon.ogg', byteArray, true, true, function() {
@@ -6458,12 +6432,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp BGM/dungeon.ogg') });
     };
     Module['addRunDependency']('fp BGM/dungeon.ogg');
-    filePreload32.send(null);
-    var filePreload33 = new DataRequest();
-    filePreload33.open('GET', 'BGM/field.ogg', true);
-    filePreload33.responseType = 'arraybuffer';
-    filePreload33.onload = function() {
-      var arrayBuffer = filePreload33.response;
+    filePreload30.send(null);
+    var filePreload31 = new DataRequest();
+    filePreload31.open('GET', 'BGM/field.ogg', true);
+    filePreload31.responseType = 'arraybuffer';
+    filePreload31.onload = function() {
+      var arrayBuffer = filePreload31.response;
       assert(arrayBuffer, 'Loading file BGM/field.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/BGM', 'field.ogg', byteArray, true, true, function() {
@@ -6471,12 +6445,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp BGM/field.ogg') });
     };
     Module['addRunDependency']('fp BGM/field.ogg');
-    filePreload33.send(null);
-    var filePreload34 = new DataRequest();
-    filePreload34.open('GET', 'BGM/puyo.ogg', true);
-    filePreload34.responseType = 'arraybuffer';
-    filePreload34.onload = function() {
-      var arrayBuffer = filePreload34.response;
+    filePreload31.send(null);
+    var filePreload32 = new DataRequest();
+    filePreload32.open('GET', 'BGM/puyo.ogg', true);
+    filePreload32.responseType = 'arraybuffer';
+    filePreload32.onload = function() {
+      var arrayBuffer = filePreload32.response;
       assert(arrayBuffer, 'Loading file BGM/puyo.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/BGM', 'puyo.ogg', byteArray, true, true, function() {
@@ -6484,12 +6458,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp BGM/puyo.ogg') });
     };
     Module['addRunDependency']('fp BGM/puyo.ogg');
-    filePreload34.send(null);
-    var filePreload35 = new DataRequest();
-    filePreload35.open('GET', 'BGM/readme.txt', true);
-    filePreload35.responseType = 'arraybuffer';
-    filePreload35.onload = function() {
-      var arrayBuffer = filePreload35.response;
+    filePreload32.send(null);
+    var filePreload33 = new DataRequest();
+    filePreload33.open('GET', 'BGM/readme.txt', true);
+    filePreload33.responseType = 'arraybuffer';
+    filePreload33.onload = function() {
+      var arrayBuffer = filePreload33.response;
       assert(arrayBuffer, 'Loading file BGM/readme.txt failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/BGM', 'readme.txt', byteArray, true, true, function() {
@@ -6497,12 +6471,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       });
     };
     Module['addRunDependency']('fp BGM/readme.txt');
-    filePreload35.send(null);
-    var filePreload36 = new DataRequest();
-    filePreload36.open('GET', 'BGM/readme_ja.txt', true);
-    filePreload36.responseType = 'arraybuffer';
-    filePreload36.onload = function() {
-      var arrayBuffer = filePreload36.response;
+    filePreload33.send(null);
+    var filePreload34 = new DataRequest();
+    filePreload34.open('GET', 'BGM/readme_ja.txt', true);
+    filePreload34.responseType = 'arraybuffer';
+    filePreload34.onload = function() {
+      var arrayBuffer = filePreload34.response;
       assert(arrayBuffer, 'Loading file BGM/readme_ja.txt failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/BGM', 'readme_ja.txt', byteArray, true, true, function() {
@@ -6510,12 +6484,12 @@ Module['FS_createPath']('/', 'BGM', true, true);
       });
     };
     Module['addRunDependency']('fp BGM/readme_ja.txt');
-    filePreload36.send(null);
-    var filePreload37 = new DataRequest();
-    filePreload37.open('GET', 'BGM/star4.ogg', true);
-    filePreload37.responseType = 'arraybuffer';
-    filePreload37.onload = function() {
-      var arrayBuffer = filePreload37.response;
+    filePreload34.send(null);
+    var filePreload35 = new DataRequest();
+    filePreload35.open('GET', 'BGM/star4.ogg', true);
+    filePreload35.responseType = 'arraybuffer';
+    filePreload35.onload = function() {
+      var arrayBuffer = filePreload35.response;
       assert(arrayBuffer, 'Loading file BGM/star4.ogg failed.');
       var byteArray = !arrayBuffer.subarray ? new Uint8Array(arrayBuffer) : arrayBuffer;
       Module['FS_createPreloadedFile']('/BGM', 'star4.ogg', byteArray, true, true, function() {
@@ -6523,7 +6497,7 @@ Module['FS_createPath']('/', 'BGM', true, true);
       }, function() { Module['removeRunDependency']('fp BGM/star4.ogg') });
     };
     Module['addRunDependency']('fp BGM/star4.ogg');
-    filePreload37.send(null);
+    filePreload35.send(null);
     if (!Module.expectedDataFileDownloads) {
       Module.expectedDataFileDownloads = 0;
       Module.finishedDataFileDownloads = 0;
@@ -6532,7 +6506,7 @@ Module['FS_createPath']('/', 'BGM', true, true);
     var PACKAGE_PATH = window['encodeURIComponent'](window.location.pathname.toString().substring(0, window.location.pathname.toString().lastIndexOf('/')) + '/');
     var PACKAGE_NAME = 'SyobonAction.data';
     var REMOTE_PACKAGE_NAME = 'SyobonAction.data';
-    var PACKAGE_UUID = 'e6f53f73-480d-48c4-bf90-4f7f3c57beaf';
+    var PACKAGE_UUID = 'bd3a7679-1312-4016-8248-82d095a736df';
     function fetchRemotePackage(packageName, callback, errback) {
       var xhr = new XMLHttpRequest();
       xhr.open('GET', packageName, true);
@@ -6577,229 +6551,217 @@ Module['FS_createPath']('/', 'BGM', true, true);
       var byteArray = new Uint8Array(arrayBuffer);
       var curr;
         curr = DataRequest.prototype.requests['res/brock.PNG'];
-        var data = byteArray.subarray(0, 1426);
-        var ptr = Module['_malloc'](1426);
+        var data = byteArray.subarray(0, 1293);
+        var ptr = Module['_malloc'](1293);
         Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1426);
+        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1293);
         curr.onload();
         curr = DataRequest.prototype.requests['res/brock2.PNG'];
-        var data = byteArray.subarray(1426, 2860);
-        var ptr = Module['_malloc'](1434);
+        var data = byteArray.subarray(1293, 2613);
+        var ptr = Module['_malloc'](1320);
         Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1434);
+        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1320);
         curr.onload();
         curr = DataRequest.prototype.requests['res/haikei.PNG'];
-        var data = byteArray.subarray(2860, 5286);
-        var ptr = Module['_malloc'](2426);
+        var data = byteArray.subarray(2613, 4850);
+        var ptr = Module['_malloc'](2237);
         Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 2426);
+        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 2237);
         curr.onload();
         curr = DataRequest.prototype.requests['res/item.PNG'];
-        var data = byteArray.subarray(5286, 7328);
-        var ptr = Module['_malloc'](2042);
+        var data = byteArray.subarray(4850, 6778);
+        var ptr = Module['_malloc'](1928);
         Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 2042);
+        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1928);
         curr.onload();
         curr = DataRequest.prototype.requests['res/omake.PNG'];
-        var data = byteArray.subarray(7328, 10133);
-        var ptr = Module['_malloc'](2805);
+        var data = byteArray.subarray(6778, 9389);
+        var ptr = Module['_malloc'](2611);
         Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 2805);
+        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 2611);
         curr.onload();
         curr = DataRequest.prototype.requests['res/omake2.PNG'];
-        var data = byteArray.subarray(10133, 12411);
-        var ptr = Module['_malloc'](2278);
+        var data = byteArray.subarray(9389, 11500);
+        var ptr = Module['_malloc'](2111);
         Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 2278);
+        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 2111);
         curr.onload();
         curr = DataRequest.prototype.requests['res/player.PNG'];
-        var data = byteArray.subarray(12411, 13178);
+        var data = byteArray.subarray(11500, 12267);
         var ptr = Module['_malloc'](767);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 767);
         curr.onload();
-        curr = DataRequest.prototype.requests['res/player_old.png'];
-        var data = byteArray.subarray(13178, 14329);
-        var ptr = Module['_malloc'](1151);
-        Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1151);
-        curr.onload();
         curr = DataRequest.prototype.requests['res/sazanami'];
-        var data = byteArray.subarray(14329, 21703);
+        var data = byteArray.subarray(12267, 19641);
         var ptr = Module['_malloc'](7374);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 7374);
         curr.onload();
-        curr = DataRequest.prototype.requests['res/sazanami-gothic.ttf'];
-        var data = byteArray.subarray(21703, 7712027);
-        var ptr = Module['_malloc'](7690324);
-        Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 7690324);
-        curr.onload();
         curr = DataRequest.prototype.requests['res/syobon3.PNG'];
-        var data = byteArray.subarray(7712027, 7727472);
-        var ptr = Module['_malloc'](15445);
+        var data = byteArray.subarray(19641, 34097);
+        var ptr = Module['_malloc'](14456);
         Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 15445);
+        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 14456);
         curr.onload();
         curr = DataRequest.prototype.requests['res/teki.PNG'];
-        var data = byteArray.subarray(7727472, 7729104);
-        var ptr = Module['_malloc'](1632);
+        var data = byteArray.subarray(34097, 35629);
+        var ptr = Module['_malloc'](1532);
         Module['HEAPU8'].set(data, ptr);
-        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1632);
+        curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1532);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/4-clear.ogg'];
-        var data = byteArray.subarray(7729104, 7757708);
+        var data = byteArray.subarray(35629, 64233);
         var ptr = Module['_malloc'](28604);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 28604);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/allclear.ogg'];
-        var data = byteArray.subarray(7757708, 7787003);
+        var data = byteArray.subarray(64233, 93528);
         var ptr = Module['_malloc'](29295);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 29295);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/brockbreak.ogg'];
-        var data = byteArray.subarray(7787003, 7793803);
+        var data = byteArray.subarray(93528, 100328);
         var ptr = Module['_malloc'](6800);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 6800);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/brockcoin.ogg'];
-        var data = byteArray.subarray(7793803, 7800849);
+        var data = byteArray.subarray(100328, 107374);
         var ptr = Module['_malloc'](7046);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 7046);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/brockkinoko.ogg'];
-        var data = byteArray.subarray(7800849, 7808037);
+        var data = byteArray.subarray(107374, 114562);
         var ptr = Module['_malloc'](7188);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 7188);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/coin.ogg'];
-        var data = byteArray.subarray(7808037, 7814695);
+        var data = byteArray.subarray(114562, 121220);
         var ptr = Module['_malloc'](6658);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 6658);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/death.ogg'];
-        var data = byteArray.subarray(7814695, 7835075);
+        var data = byteArray.subarray(121220, 141600);
         var ptr = Module['_malloc'](20380);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 20380);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/dokan.ogg'];
-        var data = byteArray.subarray(7835075, 7842669);
+        var data = byteArray.subarray(141600, 149194);
         var ptr = Module['_malloc'](7594);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 7594);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/gameover.ogg'];
-        var data = byteArray.subarray(7842669, 7863521);
+        var data = byteArray.subarray(149194, 170046);
         var ptr = Module['_malloc'](20852);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 20852);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/goal.ogg'];
-        var data = byteArray.subarray(7863521, 7892869);
+        var data = byteArray.subarray(170046, 199394);
         var ptr = Module['_malloc'](29348);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 29348);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/hintBlock.ogg'];
-        var data = byteArray.subarray(7892869, 7901233);
+        var data = byteArray.subarray(199394, 207758);
         var ptr = Module['_malloc'](8364);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 8364);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/humi.ogg'];
-        var data = byteArray.subarray(7901233, 7906471);
+        var data = byteArray.subarray(207758, 212996);
         var ptr = Module['_malloc'](5238);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 5238);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/jump.ogg'];
-        var data = byteArray.subarray(7906471, 7912788);
+        var data = byteArray.subarray(212996, 219313);
         var ptr = Module['_malloc'](6317);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 6317);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/jumpBlock.ogg'];
-        var data = byteArray.subarray(7912788, 7917531);
+        var data = byteArray.subarray(219313, 224056);
         var ptr = Module['_malloc'](4743);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 4743);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/kirra.ogg'];
-        var data = byteArray.subarray(7917531, 7923553);
+        var data = byteArray.subarray(224056, 230078);
         var ptr = Module['_malloc'](6022);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 6022);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/koura.ogg'];
-        var data = byteArray.subarray(7923553, 7928653);
+        var data = byteArray.subarray(230078, 235178);
         var ptr = Module['_malloc'](5100);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 5100);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/powerup.ogg'];
-        var data = byteArray.subarray(7928653, 7936793);
+        var data = byteArray.subarray(235178, 243318);
         var ptr = Module['_malloc'](8140);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 8140);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/Pswitch.ogg'];
-        var data = byteArray.subarray(7936793, 7943280);
+        var data = byteArray.subarray(243318, 249805);
         var ptr = Module['_malloc'](6487);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 6487);
         curr.onload();
         curr = DataRequest.prototype.requests['SE/tekifire.ogg'];
-        var data = byteArray.subarray(7943280, 7951788);
+        var data = byteArray.subarray(249805, 258313);
         var ptr = Module['_malloc'](8508);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 8508);
         curr.onload();
         curr = DataRequest.prototype.requests['BGM/castle.ogg'];
-        var data = byteArray.subarray(7951788, 8216061);
+        var data = byteArray.subarray(258313, 522586);
         var ptr = Module['_malloc'](264273);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 264273);
         curr.onload();
         curr = DataRequest.prototype.requests['BGM/dungeon.ogg'];
-        var data = byteArray.subarray(8216061, 8738091);
+        var data = byteArray.subarray(522586, 1044616);
         var ptr = Module['_malloc'](522030);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 522030);
         curr.onload();
         curr = DataRequest.prototype.requests['BGM/field.ogg'];
-        var data = byteArray.subarray(8738091, 9192816);
+        var data = byteArray.subarray(1044616, 1499341);
         var ptr = Module['_malloc'](454725);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 454725);
         curr.onload();
         curr = DataRequest.prototype.requests['BGM/puyo.ogg'];
-        var data = byteArray.subarray(9192816, 9405660);
+        var data = byteArray.subarray(1499341, 1712185);
         var ptr = Module['_malloc'](212844);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 212844);
         curr.onload();
         curr = DataRequest.prototype.requests['BGM/readme.txt'];
-        var data = byteArray.subarray(9405660, 9407620);
+        var data = byteArray.subarray(1712185, 1714145);
         var ptr = Module['_malloc'](1960);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1960);
         curr.onload();
         curr = DataRequest.prototype.requests['BGM/readme_ja.txt'];
-        var data = byteArray.subarray(9407620, 9409152);
+        var data = byteArray.subarray(1714145, 1715677);
         var ptr = Module['_malloc'](1532);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 1532);
         curr.onload();
         curr = DataRequest.prototype.requests['BGM/star4.ogg'];
-        var data = byteArray.subarray(9409152, 9427130);
+        var data = byteArray.subarray(1715677, 1733655);
         var ptr = Module['_malloc'](17978);
         Module['HEAPU8'].set(data, ptr);
         curr.response = Module['HEAPU8'].subarray(ptr, ptr + 17978);
